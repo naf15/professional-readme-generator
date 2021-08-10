@@ -88,20 +88,6 @@ const questions = [
     {
         question: 'What is your email address?',
         name: 'emailAddress'
-    },
-    {
-        question: 'Table of Contents:',
-        name: 'tableOfContents',
-        choices: [
-            'Description', 
-            'Table of Contents', 
-            'Installation', 
-            'Usage', 
-            'License', 
-            'Contributing', 
-            'Tests', 
-            'Questions'
-        ]
     }
 ];
 
@@ -170,12 +156,6 @@ function init() {
                 type: 'input',
                 message: questions[9].question,
                 name: questions[9].name
-            },
-            {
-                type: 'list',
-                message: questions[10].question,
-                name: questions[10].name,
-                choices: questions[10].choices
             }
         ])
         .then((answers) => {
